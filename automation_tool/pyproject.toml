@@ -1,0 +1,29 @@
+[project]
+name = "automation-tool"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "chirrie22", email = "chirieboesther@gmail.com" }
+]
+dependencies = [
+    "fastapi>=0.118.3",
+    "uvicorn>=0.37.0",
+    "selenium>=4.36.0",
+    "pyinstaller>=6.16.0",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/automation_tool"]

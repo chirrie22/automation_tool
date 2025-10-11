@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+selenium
+pydantic
+starlette
+anyio
+click
+colorama

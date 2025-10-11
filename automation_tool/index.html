@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Web Automation Tool</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌐 Web Automation Tool</h1>
+
+    <div class="form">
+      <input type="text" id="url" placeholder="https://example.com" />
+      <select id="action">
+        <option value="links">🔗 Links</option>
+        <option value="title">📑 Title</option>
+        <option value="text">📝 Text</option>
+        <option value="images">🖼️ Images</option>
+        <option value="screenshot">📸 Screenshot</option>
+      </select>
+      <button id="runBtn">Run</button>
+    </div>
+
+    <div id="resultBox">
+      <h3>Result:</h3>
+      <div id="result" class="result"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
